@@ -1,0 +1,124 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  cursor: default;
+  /* user-select: none; */
+}
+
+/* Color Palette */
+:root {
+  --blue: #3a80f6; /* Display background & ÷ button */
+  --white: #ffffff; /* Button backgrounds & text */
+  --dark-navy: #17223b; /* C button */
+  --red: #ff4c61; /* − button */
+  --yellow: #f7c843; /* × button */
+  --green: #3ad29f; /* + button */
+  --gray: #d3d9e2; /* Number buttons & other elements */
+}
+
+body {
+  background-color: #f5f7ff;
+}
+
+.main {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.134);
+  position: relative;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  /* gap: 5px; */
+  background-color: white;
+  padding: 1.6rem;
+  border-radius: 20px;
+  display: inline-grid;
+  grid-template-columns: 3rem 3rem 3rem 3rem;
+  grid-template-rows: 3rem 3rem 3rem 3rem 3rem 3rem;
+
+  row-gap: 8px;
+  column-gap: 8px;
+
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.display {
+  user-select: none;
+  /* padding-right: 1rem; */
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: #3a80f6;
+  width: 100%;
+  border-radius: 2rem;
+  height: 3rem;
+  color: white;
+  height: 3rem;
+  border-radius: 2rem;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.display span {
+  position: relative;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  /* width: 100%; */
+  user-select: text;
+  right: 1rem;
+  font-family: "Baloo Paaji 2", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.elem {
+  user-select: text;
+  font-family: "Baloo Paaji 2", sans-serif;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.08);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.35rem;
+  width: 50px;
+  height: 50px;
+  background-color: var(--gray);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #737b96;
+  /* box-shadow: 0 3px 4px#17223b; */
+}
+
+.sym {
+  background-color: #f5f7ff;
+}
+
+.clear {
+  background-color: #17223b;
+  color: white;
+}
+
+.diff {
+  background-color: #ff4c61;
+  color: white;
+}
+
+.div {
+  color: white;
+  background-color: #3a80f6;
+}
+
+.prod {
+  color: white;
+  background-color: #f7c843;
+}
+
+.add {
+  color: white;
+  background-color: #3ad29f;
+}
+
+.equals {
+  background-color: #f5f7ff;
+}
